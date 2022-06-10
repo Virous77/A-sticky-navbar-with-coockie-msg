@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0.5rem;
+  margin-top: 0;
+  font-family: poppins;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav.sticky {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.95);
+  width: 100%;
+  transition: 0.5s;
+}
+
+.header {
+  margin: auto;
+  background-color: black;
+  height: 100vh;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 3rem;
+  background-color: whitesmoke;
+  box-shadow: 2px 1px 30px rgb(209, 209, 209);
+}
+
+.nav-list {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  position: relative;
+}
+
+.logo h1 {
+  font-size: 2rem;
+  color: black;
+  cursor: pointer;
+}
+
+.nav-links a {
+  font-size: 1.1rem;
+  color: black;
+  cursor: pointer;
+}
+
+.nav-links a:hover {
+  color: rgb(103, 102, 102);
+}
+
+button {
+  padding: 10px 2rem;
+  border: none;
+  border-radius: 100px;
+  color: whitesmoke;
+  background-color: black;
+  cursor: pointer;
+}
+
+img {
+  background-color: black;
+  display: none;
+  position: absolute;
+  right: 15px;
+  top: 18px;
+}
+
+.section {
+  background-color: rgb(43, 41, 41);
+  height: 100vh;
+}
+
+.man {
+  background-color: rgb(105, 102, 102);
+  height: 100vh;
+}
+
+.cookie-message {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 950px) {
+  .nav {
+    padding: 5px 2rem;
+  }
+
+  .nav-list {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav.sticky {
+    /* position: unset; */
+  }
+
+  img {
+    display: block;
+  }
+
+  .nav {
+    position: relative;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    position: absolute;
+    left: 0px;
+    top: 58px;
+    background-color: whitesmoke;
+    width: 100%;
+    align-items: flex-start;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+    display: none;
+  }
+
+  .nav-links {
+    margin-bottom: 10px;
+  }
+
+  .show {
+    display: block;
+  }
+
+  .man {
+    display: none;
+  }
+}
