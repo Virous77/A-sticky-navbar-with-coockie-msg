@@ -110,6 +110,7 @@ img {
 @media (max-width: 768px) {
   .nav.sticky {
     /* position: unset; */
+    width: 97%;
   }
 
   img {
